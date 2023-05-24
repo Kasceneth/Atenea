@@ -1,3 +1,6 @@
-function CustomHookFetch(){
-    return "hola"
+function CustomHookFetch(url){
+    fetch(url)
+    .then( )
+    .catch
+    return "hola";
 }
