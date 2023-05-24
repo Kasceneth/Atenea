@@ -1,9 +1,13 @@
 
 import { useEffect, useState } from "react"
 import "./Styles.css"
+import { useFetch } from "./CustomHookFetch";
 
 export function Meal({ meal }) {
     const [imageUrl, setImageUrl] = useState("");
+
+    const [data] = useFetch(`${uri}apiKey=${k}&timeFrame=day&targetCalories=${cal}`)
+
 
 
 
