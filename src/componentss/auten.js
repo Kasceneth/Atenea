@@ -37,34 +37,34 @@ export function Auten({ changeIng }) {
     return (
 
 
-        <main role="main" class="container my-auto">
+        <main role="main" className="container my-auto">
 
 
-            <div class="row">
-                <div id="login" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3
+            <div className="row">
+                <div id="login" className="col-lg-4 offset-lg-4 col-md-6 offset-md-3
                 col-12">
-                    <h2 class="text-center">Ingreso</h2>
-                    <img class="img-fluid mx-auto d-block rounded"
+                    <h2 className="text-center">Ingreso</h2>
+                    <img className="img-fluid mx-auto d-block rounded"
                         src="https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_1280.jpg" alt="principal" />
 
                     <form>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="correo">Usuario</label>
                             <input id="correo" name="correo"
-                                class="form-control" type="email"
+                                className="form-control" type="email"
                                 placeholder="Correo electrónico"
                                 onChange={handleUsername} />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="palabraSecreta">Contraseña</label>
                             <input id="palabraSecreta" name="palabraSecreta"
-                                class="form-control" type="password"
+                                className="form-control" type="password"
                                 placeholder="Contraseña"
                                 onChange={handlePass} />
                         </div>
                         <br />
                         <button type="submit"
-                            class="btn btn-primary mb-2"
+                            className="btn btn-primary mb-2"
                             onClick={handleSubmit}>
                             Entrar
                         </button>
@@ -74,30 +74,30 @@ export function Auten({ changeIng }) {
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row" >
-                    <div class="col">
-                        <i class="bi bi-twitter"></i>
+            <div className="container">
+                <div className="row" >
+                    <div className="col">
+                        <i className="bi bi-twitter"></i>
                     </div>
-                    <div class="col">
-                        <i class="bi bi-facebook"></i>
+                    <div className="col">
+                        <i className="bi bi-facebook"></i>
                     </div>
-                    <div class="col">
-                        <i class="bi bi-instagram"></i>
+                    <div className="col">
+                        <i className="bi bi-instagram"></i>
                     </div>
-                    <div class="col">
-                        <i class="bi bi-envelope"></i>
+                    <div className="col">
+                        <i className="bi bi-envelope"></i>
                     </div>
-                    <div class="col">
+                    <div className="col">
 
-                        <i class="bi bi-whatsapp"></i>
+                        <i className="bi bi-whatsapp"></i>
 
                     </div>
                     
-                    <div class="col">
+                    <div className="col">
              
                     
-            <i class="bi bi-cart4"></i>
+            <i className="bi bi-cart4"></i>
             </div>
 
                 </div>

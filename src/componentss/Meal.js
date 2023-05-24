@@ -5,8 +5,8 @@ import { useFetch } from "./CustomHookFetch";
 
 export function Meal({ meal }) {
     const [imageUrl, setImageUrl] = useState("");
-
-    const [data] = useFetch(`${uri}apiKey=${k}&timeFrame=day&targetCalories=${cal}`)
+    const k = process.env.REACT_APP_KEY;
+    const [data] = useFetch(`https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=${k}&includeNutrition=false`)
 
 
 
@@ -25,21 +25,21 @@ export function Meal({ meal }) {
                 console.log("error")
             })
     },
-        [meal.id])
+        [meal.id]);
     return (
 
         
-            <div class="card"  id="divCard">
-        < img src = { imageUrl } class="card-img-top" alt = "receta" />
-            <div class="card-body">
-                <h5  class="fst-italic">{meal.title}</h5>
+            <div className="card"  id="divCard">
+        < img src = { imageUrl } className="card-img-top" alt = "receta" />
+            <div className="card-body">
+                <h5  className="fst-italic">{meal.title}</h5>
                 <ul>
-                    <li class="list-group-item">Tiempo de preparación:{meal.readyInMinutes} minutos</li>
-                    <li class="list-group-item">Porciones:{meal.servings}</li>
+                    <li className="list-group-item">Tiempo de preparación:{meal.readyInMinutes} minutos</li>
+                    <li className="list-group-item">Porciones:{meal.servings}</li>
                 </ul>
 
                 <div>
-                    <a href={meal.sourceUrl} class="btn btn-primary">Ir a la receta</a>
+                    <a href={meal.sourceUrl} className="btn btn-primary">Ir a la receta</a>
                 </div>
             </div>
             </div >

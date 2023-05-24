@@ -26,17 +26,17 @@ export const Home = () => {
     }
 
     return (
-        <div class="p5 text-center bg-light" id="divHeader">
-            <section class="container">
+        <div className="p5 text-center bg-light" id="divHeader">
+            <section className="container">
                 <h1> QUÉ QUIERES COMER</h1>
                 
                 <input type='number'
                     placeholder="Calorias"
                     onChange={handleChange} />
                     
-                    <div class="container"> <br></br>
+                    <div className="container"> <br></br>
                                     <button type="submit"
-                    class="btn btn-primary mb-2"
+                    className="btn btn-primary mb-2"
                     onClick={getMeals}>Mostrar</button>
                     </div>
             
