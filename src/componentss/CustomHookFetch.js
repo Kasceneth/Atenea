@@ -1,5 +1,6 @@
 
 import {useEffect, useState} from "react";
+//Custom Hook para consumir un api
 
 export const useFetch =(url) =>{
     const [data, setData] =  useState(null);
