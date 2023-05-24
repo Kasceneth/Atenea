@@ -1,0 +1,3 @@
+function CustomHookFetch(){
+    return "hola"
+}

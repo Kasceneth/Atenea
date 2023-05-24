@@ -1,0 +1,28 @@
+
+#divCard{
+
+     width: 14rem;
+     display: inline-flex;
+     margin-bottom: 5px; 
+     background-color: #eee;
+     border-radius: 5%;
+     margin-inline: 2%;
+     margin-left: auto;
+     margin-block: 20px;
+     font-size: lh;
+     width: lh;
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#divHeader{
+     
+     margin-top: 28px;
+     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
